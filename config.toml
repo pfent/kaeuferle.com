@@ -1,0 +1,15 @@
+baseURL = "https://franziska.kaeuferle.com/"
+languageCode = "en-us"
+title = "Franziska Käuferle"
+theme = "minimal"
+
+[params]
+    author = "Franziska Käuferle"
+    description = "Franziska Käuferle Architektin"
+    backgroundColor = "#e0d0d2"
+    font = "Raleway" # should match the name on Google Fonts!
+
+[[menu.main]]
+    url = "mailto:franziska@kaeuferle.com"
+    name = "Mail"
+    weight = 1
