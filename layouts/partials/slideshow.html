@@ -1,6 +1,6 @@
 {{ $fadein := 2 }}
 {{ $visible := 4 }}
-{{ $localFolder := "/static/images/" }}
+{{ $localFolder := "/static/images/slideshow/" }}
 {{ $files := sort (readDir $localFolder) }}
 {{ $numberOfFiles := len $files }}
 {{ $animationDuration := mul (add $fadein $visible) $numberOfFiles }}

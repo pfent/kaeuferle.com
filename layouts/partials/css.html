@@ -1,4 +1,14 @@
 <style>
+    @font-face {
+        font-family: 'Bebas-Neue';
+        font-style: normal;
+        font-weight: 100;
+        src: local('Bebas-Neue'), local('Bebas-Neue-Regular'), url(/font/BebasNeue-Regular.woff2) format('woff2');
+    }
+    html {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
     html body {
         font-family: '{{ .Site.Params.font }}', sans-serif;
         background-color: {{ .Site.Params.backgroundColor | default "white" }};
@@ -12,6 +22,9 @@
     }
     .navbar-default {
         border-color: {{ .Site.Params.backgroundColor | default "gray" }} !important;
+    }
+    .navbar-brand {
+        font-size: 2em !important;
     }
     .icon-with-text {
         display: flex;
@@ -40,6 +53,12 @@
     .footnote a:hover {
         color: var(--accent) !important;
         text-decoration: none;
+    }
+    img.logo {
+        max-height: 50px;
+    }
+    .navbar, .navbar-header {
+        height: 80px;
     }
 </style>
 
