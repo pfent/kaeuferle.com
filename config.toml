@@ -6,10 +6,5 @@ theme = "minimal"
 [params]
     author = "Franziska Käuferle"
     description = "Franziska Käuferle Architektin"
-    backgroundColor = "#e0d0d2"
-    font = "Bebas-Neue" # should match the name on Google Fonts!
+    backgroundColor = "#e0d9e0"
 
-[[menu.main]]
-    url = "mailto:franziska@kaeuferle.com"
-    name = "Mail"
-    weight = 1

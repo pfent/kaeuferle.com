@@ -1,21 +1,23 @@
 <style>
     @font-face {
-        font-family: 'Bebas-Neue';
+        font-family: 'Trade Gothic LT Std';
         font-style: normal;
         font-weight: 100;
-        src: local('Bebas-Neue'), local('Bebas-Neue-Regular'), url(/font/BebasNeue-Regular.woff2) format('woff2');
+        src: local('Trade Gothic LT Std'), url(/font/trade-gothic-lt-std-58d034645c5df.otf) format('otf');
     }
     html {
-        text-transform: uppercase;
+        //text-transform: uppercase;
         letter-spacing: 1px;
     }
     html body {
         font-family: '{{ .Site.Params.font }}', sans-serif;
         background-color: {{ .Site.Params.backgroundColor | default "white" }};
+        display: flex;
     }
     .navbar.navbar-default.navbar-fixed-top {
         font-family: '{{ .Site.Params.font }}', sans-serif;
         background-color: {{ .Site.Params.backgroundColor | default "white" }};
+        margin-top: 10px;
     }
     .collapse.navbar-collapse.navbar-right {
         font-weight: bold;
@@ -26,8 +28,11 @@
     .navbar-brand {
         font-size: 2em !important;
     }
+    .icon {
+        margin-top: 10px;
+        height: 18px;
+    }
     .icon-with-text {
-        display: flex;
         flex-direction: row;
         align-items: center;
     }
@@ -38,14 +43,18 @@
         fill: #000000;
     }
     main {
-        display: flex;
         align-items: center;
         justify-content: center;
     }
     .footnote {
-        align-self: flex-end;
+        align-self: center;
+        padding-left: 10px;
+        padding-bottom: 25px;
+        width: 1170px;
+        text-align: left;
     }
     .footnote a {
+        align-self: flex-start;
         color: #777;
         text-decoration: none;
         margin: 10px 5px;
@@ -68,11 +77,5 @@
 <!-- custom -->
 {{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . | absURL }}"> {{ end }}
 
-<!-- google fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font }}">
-
 <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- font awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
