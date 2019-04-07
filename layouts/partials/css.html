@@ -5,46 +5,24 @@
         font-weight: 100;
         src: local('Trade Gothic LT Std'), url(/font/trade-gothic-lt-std-58d034645c5df.otf) format('otf');
     }
-    html {
-        //text-transform: uppercase;
-        letter-spacing: 1px;
-    }
     html body {
         font-family: '{{ .Site.Params.font }}', sans-serif;
         background-color: {{ .Site.Params.backgroundColor | default "white" }};
-        display: flex;
     }
     .navbar.navbar-default.navbar-fixed-top {
         font-family: '{{ .Site.Params.font }}', sans-serif;
         background-color: {{ .Site.Params.backgroundColor | default "white" }};
         margin-top: 10px;
     }
-    .collapse.navbar-collapse.navbar-right {
-        font-weight: bold;
+    .navbar, .navbar-header {
+        height: 70px;
     }
     .navbar-default {
         border-color: {{ .Site.Params.backgroundColor | default "gray" }} !important;
     }
-    .navbar-brand {
-        font-size: 2em !important;
-    }
     .icon {
         margin-top: 10px;
         height: 18px;
-    }
-    .icon-with-text {
-        flex-direction: row;
-        align-items: center;
-    }
-    .icon-with-text img, .icon-with-text svg {
-        margin-right: var(--padding-small);
-        width: 22px;
-        height: 22px;
-        fill: #000000;
-    }
-    main {
-        align-items: center;
-        justify-content: center;
     }
     .footnote {
         padding-left: 10px;
@@ -62,11 +40,9 @@
         text-decoration: none;
     }
     img.logo {
-        max-height: 50px;
+        max-height: 40px;
     }
-    .navbar, .navbar-header {
-        height: 80px;
-    }
+    
 </style>
 
 <!-- main -->
